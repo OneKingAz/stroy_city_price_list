@@ -363,6 +363,162 @@
             text-decoration: none;
         }
 
+
+        /* Стили для блока Instagram Reel */
+        .instagram-section {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .instagram-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            right: -50%;
+            bottom: -50%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+            animation: gradientShift 20s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(20px, 20px) rotate(5deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        .instagram-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .instagram-section .subtitle {
+            opacity: 0.95;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+            position: relative;
+        }
+
+        .video-container {
+            max-width: 400px;
+            margin: 0 auto 25px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            border: 3px solid rgba(255,255,255,0.3);
+            background: #000;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+        }
+
+        .video-container .video-placeholder {
+            width: 100%;
+            aspect-ratio: 9/16;
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .video-container .video-placeholder .insta-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .video-container .video-placeholder p {
+            font-size: 1em;
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        .video-container .video-placeholder .filename {
+            background: rgba(255,255,255,0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #ffd54f;
+            margin-top: 15px;
+        }
+
+        .instagram-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #dc2743;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        .instagram-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            background: #fff8f8;
+        }
+
+        .instagram-btn .icon {
+            font-size: 1.4em;
+        }
+
+        .instagram-handle {
+            margin-top: 15px;
+            font-size: 0.95em;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .instagram-handle a {
+            color: #ffd54f;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .instagram-section h2 {
+                font-size: 1.4em;
+            }
+            .instagram-section .subtitle {
+                font-size: 0.95em;
+            }
+            .video-container {
+                max-width: 300px;
+            }
+            .instagram-btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+
         @media (max-width: 768px) {
             .visit-counter-bar {
                 font-size: 0.85em;
@@ -374,6 +530,162 @@
             }
             .visit-counter-bar .counter-number {
                 font-size: 1.1em;
+            }
+        }
+
+
+        /* Стили для блока Instagram Reel */
+        .instagram-section {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .instagram-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            right: -50%;
+            bottom: -50%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+            animation: gradientShift 20s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(20px, 20px) rotate(5deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        .instagram-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .instagram-section .subtitle {
+            opacity: 0.95;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+            position: relative;
+        }
+
+        .video-container {
+            max-width: 400px;
+            margin: 0 auto 25px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            border: 3px solid rgba(255,255,255,0.3);
+            background: #000;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+        }
+
+        .video-container .video-placeholder {
+            width: 100%;
+            aspect-ratio: 9/16;
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .video-container .video-placeholder .insta-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .video-container .video-placeholder p {
+            font-size: 1em;
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        .video-container .video-placeholder .filename {
+            background: rgba(255,255,255,0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #ffd54f;
+            margin-top: 15px;
+        }
+
+        .instagram-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #dc2743;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        .instagram-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            background: #fff8f8;
+        }
+
+        .instagram-btn .icon {
+            font-size: 1.4em;
+        }
+
+        .instagram-handle {
+            margin-top: 15px;
+            font-size: 0.95em;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .instagram-handle a {
+            color: #ffd54f;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .instagram-section h2 {
+                font-size: 1.4em;
+            }
+            .instagram-section .subtitle {
+                font-size: 0.95em;
+            }
+            .video-container {
+                max-width: 300px;
+            }
+            .instagram-btn {
+                padding: 12px 25px;
+                font-size: 1em;
             }
         }
 
@@ -467,6 +779,55 @@
             <li>Накопительные скидки и специальные предложения</li>
             <li>Подробности уточняйте у оператора</li>
         </ul>
+    </div>
+
+    <!-- Instagram Reel Section -->
+    <div class="instagram-section">
+        <h2>📱 Следите за нами в Instagram</h2>
+        <div class="subtitle">Актуальные цены, новинки и акции — в наших Stories и Reels</div>
+
+        <div class="video-container">
+            <!-- 
+                ВАЖНО: Загрузите видео файл 'stroy-city-reel.mp4' в папку с сайтом!
+
+                Как скачать Reel из Instagram:
+                1. Перейдите на https://snapinst.app или https://igram.io
+                2. Вставьте ссылку: https://www.instagram.com/reel/DMz234sIs3l/
+                3. Скачайте MP4
+                4. Переименуйте в 'stroy-city-reel.mp4'
+                5. Загрузите на хостинг рядом с этим HTML-файлом
+
+                Пока видео не загружено — отображается подсказка.
+            -->
+            <video 
+                id="instaReel"
+                controls 
+                loop 
+                muted 
+                playsinline
+                poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='711'%3E%3Crect fill='%231a1a2e' width='400' height='711'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-family='Arial' font-size='20'%3E🎬 Stroy City%3C/text%3E%3C/svg%3E"
+                onerror="this.style.display='none'; document.getElementById('videoFallback').style.display='flex';"
+            >
+                <source src="stroy-city-reel.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+
+            <!-- Подсказка, если видео не найдено -->
+            <div id="videoFallback" class="video-placeholder" style="display: none;">
+                <div class="insta-icon">📹</div>
+                <p>Загрузите видео файл<br><strong>stroy-city-reel.mp4</strong><br>в папку с сайтом</p>
+                <div class="filename">stroy-city-reel.mp4</div>
+            </div>
+        </div>
+
+        <a href="https://www.instagram.com/reel/DMz234sIs3l/" target="_blank" class="instagram-btn">
+            <span class="icon">📱</span>
+            <span>Смотреть в Instagram</span>
+        </a>
+
+        <div class="instagram-handle">
+            Или найдите нас: <a href="https://www.instagram.com/stroycity.osh/" target="_blank">@stroycity.osh</a> 👈
+        </div>
     </div>
 
     <div class="contacts">
